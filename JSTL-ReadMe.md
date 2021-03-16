@@ -11,11 +11,10 @@ https://docs.oracle.com/cd/E19798-01/821-1841/gjddd/index.html?fbclid=IwAR3n0bgI
     <c:catch var ="catchtheException">  
     <% int x = 2/0;%>  //sai
     </c:catch>  
-    
     <c:if test = "${catchtheException != null}">  
     <p>The type of exception is : ${catchtheException} <br />  
     There is an exception: ${catchtheException.message}</p>  
     </c:if>  
 </body>   
 ------result: The type of exception is : java.lang.ArithmeticException: / by zero
-               There is an exception: / by zero
+------There is an exception: / by zero
